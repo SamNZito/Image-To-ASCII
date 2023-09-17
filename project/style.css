@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: #5C8374;
+    margin: 1%;
+}
+#canvas1{
+    border: 5px solid #93B1A6;
+    margin: 5%;
+}
+#downloadLink{
+    border: 1px solid #93B1A6;
+    border-radius: 3px;
+    background: #183D3D;
+}
+#downloadLink:hover{
+    background-color: #5C8374;
+}
+.imageContainer{
+    margin-top: 10px;
+}
+#downloadButton{
+    border: 3px solid #183D3D;
+    border-radius: 3px;
+    background-color: #183D3D; 
+    color: #93B1A6;
+}
+#downloadButton:hover{
+    background-color: #5C8374;
+}
+#ImageInput{
+    border: 3px solid #183D3D;
+    border-radius: 3px;
+    background-color: #183D3D; 
+}
+input[type=file]::file-selector-button{
+    background-color: #183D3D;
+    border: 3px solid #183D3D;
+    border-radius: 3px;
+    color: #93B1A6;
+}
+input[type=file]::file-selector-button:hover {
+    background-color: #5C8374;
+}
+input[type='range']::-webkit-slider-runnable-track{
+    background-color: #93B1A6;
+    border: 2px solid #183D3D;
+    border-radius: 10px;
+}
+.controls > input{
+    width: 20%;
+}

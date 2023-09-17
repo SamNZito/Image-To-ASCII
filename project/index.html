@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image to ASCII   </title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+            <button id="downloadButton">Download ASCII Image</button> 
+            <p>Must Click the above Button each time you change image then hit "Click to Download".
+                <br>Once "Click to Download" turns blue it is ready to be clicked.
+                <br>Use the Resolution Slider to change the amount of detail.
+            </p>
+            <br>
+            <div class="downloader">
+                <a id="downloadLink" download="ascii_image.png">Click to Download</a>
+            </div>
+        <div class="imageContainer">
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+        <div class="container">
+            <canvas id="canvas1"></canvas>
+            <div class="controls">
+                <label for="resolution" id="resolutionLabel">Resolution 5px</label>
+                <input type="range" id="resolution" name="resolution" min="1"
+                max="20" value ="5">
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body> 
+</html>
